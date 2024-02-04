@@ -236,7 +236,7 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 }
 */
 
-const day = "monday";
+const day = "mondays";
 
 switch (day) {
   case "monday": // day === 'monday'
@@ -259,4 +259,19 @@ switch (day) {
     break;
   default:
     console.log("Not a valid day");
+}
+
+if (day === "monday") {
+  console.log("Plan course structure");
+  console.log("Go to coding meet up");
+} else if (day === "tuesday") {
+  console.log("Prepare thory videos");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("Write code examples");
+} else if (day === "friday") {
+  console.log("Record videos");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("Enjoy weekend :D");
+} else {
+  console.log("Not a valid day");
 }
